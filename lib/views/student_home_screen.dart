@@ -140,8 +140,9 @@ class StudentHomeScreen extends StatelessWidget {
       stream: authService.getBookings(authService.currentUser!.uid),
       builder: (context, snapshot) {
         if (snapshot.hasError) return Text('Error: ${snapshot.error}');
-        if (snapshot.connectionState == ConnectionState.waiting)
+        if (snapshot.connectionState == ConnectionState.waiting) {
           return const CircularProgressIndicator();
+        }
 
         final bookings = snapshot.data ?? [];
         if (bookings.isEmpty) {

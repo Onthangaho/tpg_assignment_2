@@ -98,7 +98,7 @@ class EditBookingScreenState extends State<EditBookingScreen> {
           child: Column(
             children: [
               DropdownButtonFormField<String>(
-                value: selectedLecturerId,
+                initialValue: selectedLecturerId,
                 items: lecturers.map((lecturer) {
                   return DropdownMenuItem(
                     value: lecturer['email']?.toString(),

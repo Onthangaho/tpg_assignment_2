@@ -76,7 +76,7 @@ class _BookingFormState extends State<BookingForm> {
         children: [
           DropdownButtonFormField<String>(
             hint: const Text('Select Lecturer'),
-            value: selectedLecturerId,
+            initialValue: selectedLecturerId,
             items: widget.lecturers.map((lecturer) {
               return DropdownMenuItem(
                 value: lecturer['email']?.toString(),
