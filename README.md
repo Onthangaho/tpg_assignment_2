@@ -40,7 +40,5 @@ A mobile-first consultation booking app that allows students to schedule meeting
 
 
 
----
 
-## 📂 Repository Structure (optional)
 
